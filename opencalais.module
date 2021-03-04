@@ -60,7 +60,7 @@ function opencalais_node_presave($entity) {
       'apiKey' => \Drupal::config('opencalais.opencalaisconfig')->get('api_key'),
       'contentType' => 'text/plain',
       'content' => strip_tags($concat_string),
-      'host' => 'api.thomsonreuters.com',
+      'host' => 'api-eit.refinitiv.com',
     ];
     $calais = new CalaisService($options);
     // Get your tags.
